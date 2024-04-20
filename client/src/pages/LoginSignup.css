@@ -1,0 +1,90 @@
+/* Login.js */
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 3rem;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  /* Signup.js */
+  
+  /* LoginSignup.js */
+
+  .lgsu button {
+    background-color: #333;
+    color: white;
+    padding: 1rem; /* Increased padding */
+    margin: 0 4.3rem;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  .lgsu button:hover {
+    background-color: #555;
+  }
+  button {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 600px) {
+    button {
+      width: 100%;
+    }
+  }
+  
+  .hall-panel-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .hall-panel {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .hall-image {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+  }
+  
+  .hall-name {
+    margin: 0;
+  }
+  
+  .hall-location {
+    margin: 5px 0;
+  }
+  
+  .hall-capacity {
+    margin: 5px 0;
+  }
