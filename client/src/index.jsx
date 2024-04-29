@@ -18,6 +18,7 @@ import DepAllDetails from './pages/Halls/DepAllDetails';
 import Admin from './components/Admin';
 import Tabl from './pages/Calender';
 
+
 const router = createBrowserRouter(
   [
     {
@@ -36,7 +37,7 @@ const router = createBrowserRouter(
         {path:"/dephalldetails/:id",element:<Table/>},
         {path:"/depalldetails/:id",element:<DepAllDetails/>},
         {path:"/admin",element:<Admin/>},
-        {path:"/calender",element:<Tabl/>}
+        {path:"/calender",element:<Tabl/>},
       ]
     }
   ]

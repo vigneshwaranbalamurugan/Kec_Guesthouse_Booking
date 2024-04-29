@@ -30,9 +30,10 @@
     margin: 0 4.3rem;
     border: none;
     cursor: pointer;
-    width: 40%;
+    width: 30%;
     border-radius: 5px;
     margin-bottom: 20px;
+ 
   }
   
   .lgsu button:hover {

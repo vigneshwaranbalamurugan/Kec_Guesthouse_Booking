@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
 
+
 const Login = () => {
   const [userType, setUserType] = useState('User'); 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+
 
   const handleLogin = async () => {
     try {
@@ -40,20 +43,22 @@ const Login = () => {
     }
   };
   return (
+    
+    <div className="logindiv" > 
     <div className="container">
-    <label>User:</label>
-    <select value={userType} onChange={(e) => setUserType(e.target.value)}>
+    <label className="flex-cont">User:</label>
+    <select  class="border" value={userType} onChange={(e) => setUserType(e.target.value)}>
       <option value="Admin">Admin</option>
       <option value="User">User</option>
     </select>
-    <label>Email:</label>
-    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
-    <label>Password:</label>
-    <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-    <strong>user:vigneshwaranb.22cse@kongu.edu<br></br>password:1234</strong><br></br>
-    <strong>admin:adminit@gmail.com <br></br>password:1234</strong><br></br>
+    <label className="flex-cont">Email:</label>
+    <input  class="rounded-2xl " type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+    <label className="flex-cont">Password:</label>
+    <input class="rounded-3xl w-1/2" type={showPassword ? "text" : "password"} value={password} onChange={(e) => setPassword(e.target.value)}/>
+    
+  <input type="checkbox" checked={showPassword} onChange={(e) => setShowPassword(e.target.checked)}/> 
     <button onClick={handleLogin}>Login</button>
-  </div>
+  </div></div>
   );
 };
 
