@@ -8,7 +8,7 @@ function LoginSignup() {
   const [activeTab, setActiveTab] = useState('login');
   
   return (
-    <section className='container lgsu' style={{ flexDirection: 'column' }}>
+    <section className=' lgsu' style={{ flexDirection: 'column' }}>
           
 
       <div className='authnav'>

@@ -18,10 +18,12 @@
     cursor: pointer;
     width: 100%;
   }
+  .lgsu{
+    background-image: url('./../assets/Loginbg.jpg');
+  background-size: 100%; 
+  background-position: center;
+  }
   
-  /* Signup.js */
-  
-  /* LoginSignup.js */
 
   .lgsu button {
     background-color: #333;

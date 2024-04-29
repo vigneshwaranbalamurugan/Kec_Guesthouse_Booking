@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
 
 const Login = () => {
@@ -54,9 +56,33 @@ const Login = () => {
     <label className="flex-cont">Email:</label>
     <input  class="rounded-2xl " type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
     <label className="flex-cont">Password:</label>
-    <input class="rounded-3xl w-1/2" type={showPassword ? "text" : "password"} value={password} onChange={(e) => setPassword(e.target.value)}/>
     
-  <input type="checkbox" checked={showPassword} onChange={(e) => setShowPassword(e.target.checked)}/> 
+    
+    <div style={{ position: 'relative', display: 'inline-block' }}>
+  <input
+    class="rounded-3xl w-1/2"
+    type={showPassword ? "text" : "password"}
+    value={password}
+    onChange={(e) => setPassword(e.target.value)}
+    style={{ paddingRight: '30px' }} // Make room for the icon
+  />
+  <button
+    type="button"
+    onClick={() => setShowPassword(!showPassword)}
+    style={{
+      background: 'none',
+      border: 'none',
+      cursor: 'pointer',
+      position: 'absolute',
+      top: '20%',
+      
+      transform: 'translateY(-50%)',
+    }}
+  >
+    <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
+  </button>
+</div>
+<br></br>
     <button onClick={handleLogin}>Login</button>
   </div></div>
   );
